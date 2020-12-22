@@ -1,4 +1,4 @@
 # interview-cheat-sheet
-типові питання - відповіді для технічного інтерв'ю на позицію QA Automation
+Типові питання - відповіді для інтерв'ю на позицію QA Automation (java).
 
 [Java](programming/java.md)
