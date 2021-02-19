@@ -27,7 +27,37 @@
 **Dependency injection** - шаблон проектування приякому поля об'єкту задаютьмя зовнішньою сутністю, використовуючи Inversion of control. Іншими словами об'єкти налаштовуються іншими об'єктами.
 
 ---
+### DI (IoC) Container
+**DI (IoC) Container** - ключовий компонент Spring
+, що надає механізм управління та налаштування залежностей. Створює об'єкти, зв'язує їх між собою та керує ними. Для керування об'єктами використовує DI (об'єкти називаються Beans). Існує два основних типи контейнерів:
+* Spring BeanFactory Container
+* Spring ApplicationContext Container
+
+---
 ### ApplicationContext 
-**ApplicationContext** - частина Spring, що керує створеними вами класами і їх залежностями.
+**ApplicationContext** - головний інтерфейс Spring, що надає інформацію про конфігурацію аплікації. А саме:
+* Фабричні методи для доступу до компонентів аплікації.
+* Можливість завантажувати файлові ресурси
+* Можливість публікувати та обробляти події
+* Керування життєвим циклом бінів
+
+Конфігурування може відбуватись наступними способами:
+* Java-Based Configuration (`@Bean`, `@Configuration`)
+* Annotation-Based Configuration  (`@Component`, `@Controller`, `@Service`, `@Repository`, `@Autowired`, і
+ `@Qualifier`)
+* XML-Based Configuration
+
+---
+### Bean
+**Bean** - будьякий клас, що керується Spring та існує в середині DI (IoC) контейнера. Bean керується DI
+(ІоС) контейнером.
+
+DI container
+
 
 Bean
+context
+@Component и @Autowired
+@Transactional
+
+SOLID
