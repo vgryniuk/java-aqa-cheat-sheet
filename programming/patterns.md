@@ -1,4 +1,4 @@
-#sPatterns
+# Patterns
 Singletone
 Factory
 Page Object
