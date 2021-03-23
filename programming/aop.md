@@ -1,4 +1,4 @@
-### AOP Aspect Oriented Programming
+# Aspect Oriented Programming
 **AOP** - підхід до архітектури ПЗ, метою якого є збільшити модульність системи шляхом виділення **cross-cutting
  concerns** - елементів спільних для різних шарів абстракції. Реалізується за допомогою **AspectJ**.
  
