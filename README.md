@@ -12,3 +12,5 @@
 [Aspect Oriented Programming](programming/aop.md)
 
 [Patterns](programming/patterns.md)
+
+[SOLID](programming/solid.md)
