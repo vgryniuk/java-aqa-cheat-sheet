@@ -1,7 +1,7 @@
 # Java AQA interview cheat sheet
 Типові питання - відповіді для інтерв'ю на позицію QA Automation (java).
 
-[Java Basics](programming/java.md)
+[Java](programming/java.md)
 
 [Java 8](programming/java8.md)
 
@@ -12,5 +12,7 @@
 [Aspect Oriented Programming](programming/aop.md)
 
 [Patterns](programming/patterns.md)
+
+[REST](networking/rest.md)
 
 [SOLID](programming/solid.md)
