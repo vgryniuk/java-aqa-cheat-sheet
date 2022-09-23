@@ -9,6 +9,9 @@
 * не можна оголошувати статичні змінні і класи скрім констант `static final`
 * не можна оголошувати інтерфейс
 * не можна оголошувати enum
+
+Синтаксис `() -> new TestBrokenException()` еквівалентно `TestBrokenException::new`. Де `::` - оператор посилання на метод.
+
 ---
 
 ## Optionals
@@ -17,7 +20,7 @@
 
 * Основні методи які використовуються найчастіше: `isPresent()` і `get()`. 
 * Optional може повертати об'єкт за замовчуванням за допомогою методів `T orElse(T other)`, або `T orElseGet(Supplier <? extends T> supplier)`. 
-* Щоб згенерувати виключення, замісто тього щоб обгортати метод в `try/catch` можна використати методи `orElseThrow()` (jdk 1.8), чи `orElseThrow(Supplier <? extends t> exceptionSupplier)` (jdk 1.11).
+* Щоб згенерувати виключення, замість тього щоб обгортати метод в `try/catch` можна використати методи `orElseThrow(Supplier <? extends t> exceptionSupplier)` для jdk 1.8, `orElseThrow()` для jdk 1.11.
 
 ---
 stream API
