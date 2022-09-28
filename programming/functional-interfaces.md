@@ -26,7 +26,24 @@
 * **BinaryOperator\<T>** - приймає як параметри 2 об'єкти типу Т, виконує над ними деякі операції, і повертає об'єкт типу Т.
 ---
 
+### Predicate
+**Predicate\<T>** - функціональний інтерфейс, що з'явився у java 8. Використовується для перевірки тої чи іншої умови. Найчастіше використовується для фільтрації даних, щоб визначити, підійде об'єкт для подальшої роботи, чи ні.
 
+Predicate містить наступні методи:
+* абстрактний `boolean test(t t)`
+* default `and(), or(), negate()`
+* static `not(), isEqual()`
+
+```
+        List<Integer> listInt = new ArrayList<>(List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+
+        Predicate<Integer> p1 = e -> e > 2;
+        Predicate<Integer> p2 = e -> e < 5;
+
+        listInt.removeIf(p1.and(p2).negate());
+        
+        System.out.println(listInt); // [3, 4]
+```
 
 ---
 
