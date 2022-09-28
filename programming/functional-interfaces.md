@@ -40,7 +40,7 @@ Predicate містить наступні методи:
         Predicate<Integer> p1 = e -> e > 2;
         Predicate<Integer> p2 = e -> e < 5;
 
-        listInt.removeIf(p1.and(p2).negate());
+        listInt.removeIf(p1.and(p2).negate());  // або listInt.removeIf(Predicate.not(p1.and(p2)));
         
         System.out.println(listInt); // [3, 4]
 ```
