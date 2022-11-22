@@ -70,3 +70,37 @@ System.out.println(f.apply("Hello")); //5
 
 ---
 
+### Consumer
+
+**Consumer<T>** - функціональний інтерфейс java8, що використовується для опису операції над об'єктом, без повернення результату. В основному реалізується опираючист на "побічні ефекти" при виконанні операції.
+
+**Побічні ефекти методі (функції)** - можливість функції в процесі виконання:
+* читати і модифікувати значення глобальних змінних і полів класу.
+* виконуватиоперації вводу/виводу
+* реагувати на виключення і викликати їх обробку
+
+Методі consumer:
+* абстрактний `void accept(T t)`
+* дефолтний `Consumer<T> andThen(Consumer<? super T> after)` (композиція).
+
+Як і для інших функціональних інтерфейсів, для consumer існують бінарна та примітивна спеціалізації:
+* `void accept(T t, U u)`
+* `default BiConsumer<T, U> andThen(BiConsumer<? super T, ? super U> after)`
+* ...
+
+---
+
+### UnaryOperator
+
+**UnaryOperator<T>** - функціональний інтерфейс java8. Є наслідником функціонального інтерфейсу `Function<T,T>`, з тою лиш різницею, що параметр і результат того ж типу.
+
+Методи UnaryOperator:
+* `abstract T apply(T t)`
+* `default <V> Function<V,T> andThen(Function<? super T, ? extends V> after)`
+* `default V Function<V,T> compose(Function<? super V, ? extends T> before)` (композиція)
+* `static <T> UnaryOperator<T> identity()` (повертає значення аргументу)
+ 
+UnaryOperator має стандартні примітивні спеціалізації.
+
+---
+
