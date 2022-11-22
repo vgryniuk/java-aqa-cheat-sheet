@@ -5,6 +5,8 @@
 
 [Java 8](programming/java8.md)
 
+[Functional interfaces](programming/functional-interfaces.md)
+
 [AQA Tools](programming/tools.md)
 
 [Spring Framework](programming/spring.md)
