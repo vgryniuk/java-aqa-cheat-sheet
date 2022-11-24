@@ -7,6 +7,8 @@
 
 [Functional interfaces](programming/functional-interfaces.md)
 
+[Stream API](programming/streamapi.md)
+
 [AQA Tools](programming/tools.md)
 
 [Spring Framework](programming/spring.md)
