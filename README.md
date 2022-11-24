@@ -3,6 +3,8 @@
 
 [Java](programming/java.md)
 
+[Nested classes](programming/nested-classes.md)
+
 [Java 8](programming/java8.md)
 
 [Functional interfaces](programming/functional-interfaces.md)
