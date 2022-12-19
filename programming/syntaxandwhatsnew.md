@@ -3,7 +3,7 @@
 
 ### Ternary operator
 ```
-variable = (condition) ? expressionTrue :  expressionFalse;
+variable = (condition) ? expressionTrue : expressionFalse;
 ```
 ---
 
