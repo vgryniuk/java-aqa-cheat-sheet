@@ -2,9 +2,9 @@
 ---
 
 ### Ternary operator
-'''
+```
 variable = (condition) ? expressionTrue :  expressionFalse;
-'''
+```
 ---
 
 ### Java 8
