@@ -1,7 +1,9 @@
 # Java AQA interview cheat sheet
 Типові питання - відповіді для інтерв'ю на позицію QA Automation (java).
 
-[Java](programming/java.md)
+[Syntax and What's new](programming/syntax-and-whats-new.md)
+
+[General Java](programming/java.md)
 
 [Nested classes](programming/nested-classes.md)
 
