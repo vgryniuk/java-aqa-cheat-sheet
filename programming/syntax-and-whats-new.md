@@ -29,4 +29,5 @@ variable = (condition) ? expressionTrue : expressionFalse;
 * список може бути серіалізований, якщо всі елементи серіалізуються.
 
 Більш широка реалізіція створення списку `Arrays.asList();`.
-...
+
+---
