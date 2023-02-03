@@ -18,6 +18,7 @@ StreamAPI побудований на основі інтерфейсу `BaseStr
 * Static methods - `IntStream.range(int, int)`, `StreamOf(Object[])`.
 * File - `File.lines()`.
 ---
+
 ### Проміжні методи для фільтрацій даних
 * `Stream<T> filter(Predicate<? Super T> predicate)`
 * `Stream<T> distinct()` - повертає той самий потік без дублювання.
@@ -53,5 +54,25 @@ StreamAPI побудований на основі інтерфейсу `BaseStr
         IntStream is = Arrays.stream(array).flatMapToInt(p -> p.codePoints());
         is.forEach(System.out::println); // 77, 101, 114, 99, 117, 114, 121, 69, 97...
 ```
+---
+### Проміжні методи для зміни порядку потоку
+Потоки можуть як зберігати порядок слідування даних, так і не зберігати. В загальному випадку, якщо потік був створений на основі структури, що зберігає порядок, то і сам потік також зберігає порядок.
+* `S unordered()` - повертає еквівалентний потік в якому не зберігається порядок слідування.
+* `Stream<T> sorted(Comparator<? super T> comparator)` - сортування на основі Comparator.
+* `Stream<T> sorted()` - сортування на основі Comparable.
+
+---
+### Термінальні методи що повертають один результат
+**Термінальні методи** - методи, що обробляють елементи потоку та завершують його роботу. Термінальний метод може бути тільки один.
+
+* `boolean allMatch(Predicate<? super T> predicate)` - повертає `true` якщо всі елементи потоку задовольняють предикат.
+* `boolean anyMatch(Predicate<? super T> predicate)` - повертає `true` якщо хоча б один елемент потоку задовольняє предикат.
+* `boolean noneMatch(Predicate<? super T> predicate)` - повертає `true` якщо жоден елемент потоку не задовольняє предикат.
+* `Optional<T> findAny()` - повертає Optional, якщо елемент є в потоці, або пустий, якщо немає.
+* `Optional<T> findFirsty()` - повертає Optional з першим елементом в потоці, якщо елемент є в потоці, або пустий, якщо немає.
+* `long count()` - повертає кількість елементів в потоці.
+* `Optional<T> max(Comparator<? super T> comparator)` - повертає максимальний елемент з потоку.
+* `Optional<T> min(Comparator<? super T> comparator)`
+ 
 ---
 
