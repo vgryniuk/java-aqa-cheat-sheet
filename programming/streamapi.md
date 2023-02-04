@@ -78,7 +78,7 @@ StreamAPI побудований на основі інтерфейсу `BaseStr
 ### Акумулюючі термінальні методи
 * `Optional<T> reduce(BinaryOperator<T> accumulator)` - Створює результат акумулюючи елементи потоку. Над елементам ипотоку виконується операція передана через бінарний оператор `accumulator`. В якості базового елемента береться перший елемент в потоці. (Приклад: додати всі елементи потоку).
 * `T reduce(T identity, BinaryOperator<T> accumulator)` - Аналогічний до попереднього методу, але базовий елемент задається явно.
-* `U <U> reduce(U identity, BiFunction<U, ? super T,U> accumulator, BinaryOperator<U> combiner)` - результат може бути іншого типу ніж елементи потоку. Третій
+* `U <U> reduce(U identity, BiFunction<U, ? super T,U> accumulator, BinaryOperator<U> combiner)` - результат може бути іншого типу ніж елементи потоку. Третій параметр використовується для паралельних потоків.
 
 ```
         List<Integer> l = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
