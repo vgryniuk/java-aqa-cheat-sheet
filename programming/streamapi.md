@@ -73,6 +73,33 @@ StreamAPI побудований на основі інтерфейсу `BaseStr
 * `long count()` - повертає кількість елементів в потоці.
 * `Optional<T> max(Comparator<? super T> comparator)` - повертає максимальний елемент з потоку.
 * `Optional<T> min(Comparator<? super T> comparator)`
- 
+
+---
+### Акумулюючі термінальні методи
+* `Optional<T> reduce(BinaryOperator<T> accumulator)` - Створює результат акумулюючи елементи потоку. Над елементам ипотоку виконується операція передана через бінарний оператор `accumulator`. В якості базового елемента береться перший елемент в потоці. (Приклад: додати всі елементи потоку).
+* `T reduce(T identity, BinaryOperator<T> accumulator)` - Аналогічний до попереднього методу, але базовий елемент задається явно.
+* `U <U> reduce(U identity, BiFunction<U, ? super T,U> accumulator, BinaryOperator<U> combiner)` - результат може бути іншого типу ніж елементи потоку. Третій
+
+```
+        List<Integer> l = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+        BinaryOperator<Integer> add = (a, b) -> a + b;
+        Optional<Integer> sum = l.stream()
+                .filter(e -> e%2 ==0)       // {2, 4, 6 ,8, 10}
+                .reduce(add);               // 2 + 4 + 6 + 8 + 10 = 30
+        System.out.println(sum.get());      // 30
+```
+
+```
+        List<String> l = List.of("World", "!");
+        String result = l.stream().reduce("Hello", (a,b) -> a + " " + b);
+        System.out.println(result);         // Hello World !
+```
+```
+        List<String> l = List.of("hello", "world");
+        Integer sum = l.stream()
+                .reduce(0, (s,e) -> s + e.length(), Integer::sum);
+        System.out.println(sum);        //10
+```
+
 ---
 
