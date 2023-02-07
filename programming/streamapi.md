@@ -109,7 +109,7 @@ StreamAPI побудований на основі інтерфейсу `BaseStr
 *  `<R,A> R collect(Collector(?, super T,A,R) collector)` - акумулює потік в структуру даних, використовуючи інтерфейс `Collector`.
 
 ---
-#### Клас Collectors
+### Клас Collectors
 **Клас Collectors**  - містить велику кількість статичних методів, що повертають реалізацію інтерфейсу `Collector`. Методи цього класу значно спрощуют ьвикористання акумулюючих термінальних методів.
 ##### Методи для збору в Collection
 * `static<T,C extends Collection<T>> Collector<T,?,C> toCollection(Supplier<C> collectionFactory)`
