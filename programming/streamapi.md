@@ -109,4 +109,35 @@ StreamAPI побудований на основі інтерфейсу `BaseStr
 *  `<R,A> R collect(Collector(?, super T,A,R) collector)` - акумулює потік в структуру даних, використовуючи інтерфейс `Collector`.
 
 ---
+#### Клас Collectors
+**Клас Collectors**  - містить велику кількість статичних методів, що повертають реалізацію інтерфейсу `Collector`. Методи цього класу значно спрощуют ьвикористання акумулюючих термінальних методів.
+##### Методи для збору в Collection
+* `static<T,C extends Collection<T>> Collector<T,?,C> toCollection(Supplier<C> collectionFactory)`
+* `static <T> Collector<T,?,List<T>> toList()`
+* `static <T> Collector<T,?,Set<T>> toSet()`
+* `static <T> Collector<T,?,List<T>> toUnmodifiableList()`
+* `static <T> Collector<T,?,Set<T>> toUnmodifiableSet()`
+
+##### Методи для збору в Map
+* `static <T,K,U> Collector<T,?,Map<K,U>> toMap(Function<? super T,? extends K> keyMapper, Function<? super T,? extends U> valueMapper)`
+* ...
+
+##### Методи для групування даних в Map
+* `static <T,K> Collector<T,?,Map<K,List<T>>> groupingBy(Function<? super T,? extends K> classifier)`
+* ...
+
+#### Методи для бінарного групування в Map
+* `static <T> Collector<T,?,Map<Boolean,List<T>>> partitioningBy(Predicate<? super T> predicate)`
+
+#### Методи для акумулювання даних
+* `static <T> Collector<T,?,Optional<T>> reducing(BinaryOperator<T> op)`
+...
+---
+
+
+
+
+
+
+---
 
