@@ -122,6 +122,13 @@ StreamAPI побудований на основі інтерфейсу `BaseStr
 * `static <T,K,U> Collector<T,?,Map<K,U>> toMap(Function<? super T,? extends K> keyMapper, Function<? super T,? extends U> valueMapper)`
 * ...
 
+```
+        String s = "fjksnfskldnfslknfsklawerase";
+        Map<String, Integer> m = Arrays.asList(s.split("")).stream()
+                .collect(Collectors.toMap(Function.identity(), e -> 1, (a, b) -> a+b));
+        System.out.println(m);      // {a=2, r=1, s=5, d=1, e=2, f=4, w=1, j=1, k=4, l=3, n=3}
+```
+
 ##### Методи для групування даних в Map
 * `static <T,K> Collector<T,?,Map<K,List<T>>> groupingBy(Function<? super T,? extends K> classifier)`
 * ...
