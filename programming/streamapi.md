@@ -139,6 +139,18 @@ StreamAPI побудований на основі інтерфейсу `BaseStr
 #### Методи для акумулювання даних
 * `static <T> Collector<T,?,Optional<T>> reducing(BinaryOperator<T> op)`
 ...
+
+### Термінальні методи, що виконують дії над елементами потоків
+* `void forEach(Consumer<? super T> action)`
+* `void forEachOrdered(Consumer<? super T> action)`
+* `Object[] toArray()`
+---
+
+### Примітивні спеціалізації Stream
+* `static <T> Stream<T> of(T t)`
+* `static <T> Stream<T> of(T... values)`
+* `static IntStream range(int startInclusive,   int endExclusive)`
+
 ---
 
 
