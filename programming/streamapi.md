@@ -54,6 +54,13 @@ StreamAPI побудований на основі інтерфейсу `BaseStr
         IntStream is = Arrays.stream(array).flatMapToInt(p -> p.codePoints());
         is.forEach(System.out::println); // 77, 101, 114, 99, 117, 114, 121, 69, 97...
 ```
+
+```
+        List<List<Integer>> result = List.of(Arrays.asList(1), Arrays.asList(2, 3));
+        List<Object> flat = result.stream()
+                .flatMap(List::stream)
+                .collect(Collectors.toList()); \\ [1, 2, 3]
+```
 ---
 ### Проміжні методи для зміни порядку потоку
 Потоки можуть як зберігати порядок слідування даних, так і не зберігати. В загальному випадку, якщо потік був створений на основі структури, що зберігає порядок, то і сам потік також зберігає порядок.
