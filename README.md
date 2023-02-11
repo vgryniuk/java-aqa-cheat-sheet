@@ -1,26 +1,28 @@
 # Java AQA interview cheat sheet
 Типові питання - відповіді для інтерв'ю на позицію QA Automation (java).
 
-[Syntax and What's new](programming/syntax-and-whats-new.md)
+[Java Basics](programming/java.md)
 
-[General Java](programming/java.md)
-
-[Nested classes](programming/nested-classes.md)
+[Syntax and what's new in Java 8+](programming/syntax-and-whats-new.md)
 
 [Java 8](programming/java8.md)
+
+[Nested classes](programming/nested-classes.md)
 
 [Functional interfaces](programming/functional-interfaces.md)
 
 [Stream API](programming/streamapi.md)
 
-[AQA Tools](programming/tools.md)
-
 [Spring Framework](programming/spring.md)
 
 [Aspect Oriented Programming](programming/aop.md)
 
+
+[SOLID](programming/solid.md)
+
 [Patterns](programming/patterns.md)
+
 
 [REST](networking/rest.md)
 
-[SOLID](programming/solid.md)
+[AQA Tools](programming/tools.md)
