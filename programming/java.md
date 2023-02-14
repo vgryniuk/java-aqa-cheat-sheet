@@ -89,18 +89,11 @@ class <CLASS_NAME> implements Serializable {transient String <VAR_NAME>}
 Статичні змінні не серіалізуються.
 
 ---
+### Exceptions
 
-Класи
+![Exception hierachy diagram](ExceptionClassHierarchy.png "Exception hierachy diagram")
 
-Абстрактні класи
-
-Інтерфейси
-
-exceptions
-
-override / overload
-
-Collections
+Обробка винятків дозволяє нам розмежовувати код на код, який повинен виконуватися при звичайному перебігу програми та код, який повинен виконуватися при появі винятків.
 ---
 
 
