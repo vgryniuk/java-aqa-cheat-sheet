@@ -118,5 +118,5 @@ class <CLASS_NAME> implements Serializable {transient String <VAR_NAME>}
 ---
 ### Java Collections Framework
 
-
+![Java Collections Framework diagram](java-collections-cheat-sheet.jpg "Java Collections Framework diagram")
 --
