@@ -116,7 +116,3 @@ class <CLASS_NAME> implements Serializable {transient String <VAR_NAME>}
 | коли використовувати   | При роботі зі стрічками, які рідко будуть модифікуватись.        | При роботі зі стрічками в однопоточному середовищі. | При роботі зі стрічками в багатопоточному середовищі.       |
 
 ---
-### Java Collections Framework
-
-![Java Collections Framework diagram](java-collections-cheat-sheet.png "Java Collections Framework diagram")
---
