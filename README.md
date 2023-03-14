@@ -3,6 +3,8 @@
 
 [Java Basics](programming/java.md)
 
+[Collections](programming/collections.md)
+
 [Syntax and what's new in Java 8+](programming/syntax-and-whats-new.md)
 
 [Java 8](programming/java8.md)
