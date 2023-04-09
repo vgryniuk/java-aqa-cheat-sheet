@@ -1,6 +1,6 @@
 # Java Collections Framework
 
-![Java Collections Framework diagram](java-collections-cheat-sheet.png "Java Collections Framework diagram")
+![Java Collections Framework diagram](/images/java-collections-cheat-sheet.png "Java Collections Framework diagram")
 
 ---
 ## List
