@@ -93,7 +93,7 @@ class <CLASS_NAME> implements Serializable {transient String <VAR_NAME>}
 ---
 ### Exceptions
 
-![Exception hierachy diagram](ExceptionClassHierarchy.png "Exception hierachy diagram")
+![Exception hierachy diagram](/images/ExceptionClassHierarchy.png "Exception hierachy diagram")
 
 Обробка винятків дозволяє нам розмежовувати код на код, який повинен виконуватися при звичайному перебігу програми та код, який повинен виконуватися при появі винятків.
 
