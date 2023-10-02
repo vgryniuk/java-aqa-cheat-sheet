@@ -22,7 +22,7 @@
 * Optional може повертати об'єкт за замовчуванням за допомогою методів `T orElse(T other)`, або `T orElseGet(Supplier <? extends T> supplier)`. 
 * Щоб згенерувати виключення, замість тього щоб обгортати метод в `try/catch` можна використати методи `orElseThrow(Supplier <? extends t> exceptionSupplier)` для jdk 1.8, `orElseThrow()` для jdk 1.11.
 * Для перетворення значеннь які містяться в об'єкті класу optional можна використовувати методи `filter()`, `map()`, `flatMap()` і `or()`.
-* Optional містить метод `stream()`, Stream API власне є складовою Optionalю
+* Optional містить метод `stream()`, Stream API власне є складовою Optional.
 
 **Варто застосовувати Optional**
 * Методи пошуку
