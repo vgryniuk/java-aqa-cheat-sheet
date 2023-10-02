@@ -45,12 +45,12 @@ StreamAPI побудований на основі інтерфейсу `BaseStr
 * ...
 
 ```
-        List<String> l = List.of("Mercury", "Venus", "Earth" ,"Mars");
+        List<String> l = List.of("Mercury", "Venus", "Earth", "Mars");
         Stream<Integer> s = l.stream().map(p -> p.length()); // Stream<String> -> Stream<Integer>
         s.forEach(System.out::println); // 7, 5, 5, 4
 ```
 ```
-        String[] array = new String[] {"Mercury", "Earth" ,"Mars"};
+        String[] array = new String[] {"Mercury", "Earth", "Mars"};
         IntStream is = Arrays.stream(array).flatMapToInt(p -> p.codePoints());
         is.forEach(System.out::println); // 77, 101, 114, 99, 117, 114, 121, 69, 97...
 ```
@@ -83,7 +83,7 @@ StreamAPI побудований на основі інтерфейсу `BaseStr
 
 ---
 ### Акумулюючі термінальні методи
-* `Optional<T> reduce(BinaryOperator<T> accumulator)` - Створює результат акумулюючи елементи потоку. Над елементам ипотоку виконується операція передана через бінарний оператор `accumulator`. В якості базового елемента береться перший елемент в потоці. (Приклад: додати всі елементи потоку).
+* `Optional<T> reduce(BinaryOperator<T> accumulator)` - Створює результат акумулюючи елементи потоку. Над елементами потоку виконується операція передана через бінарний оператор `accumulator`. В якості базового елемента береться перший елемент в потоці. (Приклад: додати всі елементи потоку).
 * `T reduce(T identity, BinaryOperator<T> accumulator)` - Аналогічний до попереднього методу, але базовий елемент задається явно.
 * `U <U> reduce(U identity, BiFunction<U, ? super T,U> accumulator, BinaryOperator<U> combiner)` - результат може бути іншого типу ніж елементи потоку. Третій параметр використовується для паралельних потоків.
 
@@ -117,7 +117,7 @@ StreamAPI побудований на основі інтерфейсу `BaseStr
 
 ---
 ### Клас Collectors
-**Клас Collectors**  - містить велику кількість статичних методів, що повертають реалізацію інтерфейсу `Collector`. Методи цього класу значно спрощуют ьвикористання акумулюючих термінальних методів.
+**Клас Collectors**  - містить велику кількість статичних методів, що повертають реалізацію інтерфейсу `Collector`. Методи цього класу значно спрощують використання акумулюючих термінальних методів.
 ##### Методи для збору в Collection
 * `static<T,C extends Collection<T>> Collector<T,?,C> toCollection(Supplier<C> collectionFactory)`
 * `static <T> Collector<T,?,List<T>> toList()`
