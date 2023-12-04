@@ -34,6 +34,25 @@
 | @Ignore | @Test(enabled=false) |
 ---
 
-# Selenide vs Selenium
+# Selenide vs Selenium vs Playwright
+
+| Feature                       | Selenium                                   | Selenide                                      | Playwright                                   |
+|-------------------------------|--------------------------------------------|-----------------------------------------------|----------------------------------------------|
+| **Language Support**          | Java, Python, C#, Ruby, etc.               | Java, Kotlin, Groovy, Scala                   | JavaScript, TypeScript                       |
+| **API Style**                 | Object-oriented                            | Fluent                                        | Object-oriented                              |
+| **Browser Support**           | Chrome, Firefox, Safari, Edge, etc.        | Chrome, Firefox, Edge, Safari                 | Chromium-based, Firefox, WebKit              |
+| **Locator Strategy**          | Various (ID, Name, XPath, CSS, etc.)       | CSS, XPath                                    | CSS, XPath, text, accessibility, etc.        |
+| **Wait Mechanism**            | Explicit and Implicit Waits                 | Fluent Waits                                  | Auto-waits (auto-waiting for elements)      |
+| **Parallel Testing**          | Requires additional setup for parallel execution | Built-in support for parallel execution | Built-in support for parallel execution     |
+| **Headless Mode**             | Supported                                   | Supported                                     | Supported                                    |
+| **Installation**              | Requires additional setup (drivers, etc.)  | Simplified setup                              | Simplified setup                             |
+| **Community Support**         | Large community and resources               | Active community and growing                  | Growing community support                    |
+| **Popularity**                | Widely used in industry                     | Increasing adoption                           | Rapidly gaining popularity                   |
+| **Speed of Execution**        | Moderately fast                             | Fast                                          | Very fast                                    |
+| **Multiple Browser Tabs**     | Can manage but requires more manual handling | Limited support                     | Native support for managing multiple tabs    |
+| **Test Recordings**           | Usually requires separate plugins/tools    | Not available                                | Native support for test recordings          |
+| **Built-in Network Control**  | Limited control over network traffic        | Limited control                              | Native support for network traffic control  |
+| **Built-in Reporting**        | Requires additional plugins/integration    | Limited support                              | Native support for reporting                |
+| **API Testing**               | Can be integrated with additional tools    | Limited support                              | Limited native support for API testing      |
 
 # Lombok
