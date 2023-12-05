@@ -1,5 +1,5 @@
-# Java AQA interview cheat sheet
-Типові питання - відповіді для інтерв'ю на позицію QA Automation (java).
+# Java AQA cheat sheet
+Короткий конспект java для автоматизаторів.
 
 [Questions](questions.md)
 
