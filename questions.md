@@ -21,4 +21,3 @@
 19. Опиши з власного досвіду використання патернів, крім Page Object, Singletone, etc?
 20. SOLID. Наведи приклади з власного досвіду SRP, ISP
 21. SPRING в чому різинця між Dependency injection, Dependency inversion, Inversion of control?
-22.  
