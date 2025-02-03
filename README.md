@@ -23,6 +23,8 @@
 
 [Spring Framework](programming/spring.md)
 
+[Hibernate Framework](programming/hibernate.md)
+
 [Aspect Oriented Programming](programming/aop.md)
 
 [REST](networking/rest.md)
